@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  adminjs-dashboard-starter-build:
+    image: adminjs-nestjs-mongoose-starter-build:v1
+    container_name: adminjs-dashboard
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "8001:8001"
